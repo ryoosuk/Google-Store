@@ -1,3 +1,68 @@
+@charset "UTF-8";
+/*======================================*/
+/*リセット*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  text-rendering: auto;
+  position: relative;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active, a:focus {
+  color: #222222;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.main {
+  margin: auto;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+/*=========================*/
 a {
   text-decoration: none;
   color: white;
@@ -79,45 +144,54 @@ header .right .img-wrap img {
   border-radius: 50%;
 }
 
-main {
-  font-family: 'Google Sans',Arial,sans-serif;
+main .char .text-wrap {
+  background-image: url("");
+  width: 100%;
+  min-height: 600px;
+  position: relative;
 }
 
-main .char a {
-  color: #1967d2;
+main .char .text-wrap video {
+  height: 100%;
+  width: 100%;
 }
 
-main .char .p1 {
-  width: 313px;
-  height: 240px;
+main .char .text-wrap .text1 {
+  position: absolute;
   font-size: 56px;
-  line-height: 60px;
-  font-family: 'Google Sans',Arial,sans-serif;
 }
 
-main .char .p2 {
+main .char .text-wrap .text2 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
   margin: 16px 0px 0px;
+  font-size: 16px;
 }
 
 main .contents .title {
   text-align: center;
   height: 36px;
   font-size: 32px;
+  background-color: cornflowerblue;
 }
 
-main .contents .title .p1 {
+main .contents .title p {
   font-size: 32px;
+  font-weight: 400;
+  padding-top: 40px;
 }
 
 main .contents .item-wrap {
   padding: 0px 24px;
-  margin: 0px -802px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: antiquewhite;
 }
 
 main .contents .item-wrap .item {
+  margin-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +209,8 @@ main .contents .item-wrap .item img {
 }
 
 main .contents .item-wrap .item .char-wrap {
+  width: 198px;
+  height: 124px;
   padding: 32px 20px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -142,12 +218,16 @@ main .contents .item-wrap .item .char-wrap {
 }
 
 main .contents .item-wrap .item .char-wrap .name {
+  font-size: 20px;
   width: 198px;
   height: 28px;
+  margin: 0 0;
 }
 
 main .contents .item-wrap .item .char-wrap .price {
   height: 20px;
+  width: 198px;
+  height: 28px;
 }
 
 main .contents2 {
@@ -159,23 +239,34 @@ main .contents2 .title {
   height: 88px;
 }
 
+main .contents2 .title p {
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+
 main .contents2 .item-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: yellow;
+  background-color: #70facc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .contents2 .item-body .item-wrap {
-  padding: 0px 24px;
+  width: 325px;
+  height: 608px;
   margin-left: 24px;
-  background-color: indianred;
+  margin-bottom: 24px;
+  background-color: #7adcfd;
 }
 
-main .contents2 .item-body .item-wrap .item {
-  margin: 20px 20px;
+main .contents2 .item-body .item-wrap .item p {
+  text-align: center;
 }
 
 main .contents2 .item-body .item-wrap .item .link {
@@ -187,7 +278,7 @@ main .contents2 .item-body .item-wrap .item .button {
   height: 50px;
   width: 100px;
   border-radius: 20px;
-  margin-left: 200px;
+  margin: auto;
 }
 
 main .contents2 .item-body .item-wrap .item .button a {
@@ -201,8 +292,11 @@ main .contents2 .item-body .item-wrap .item .button a {
 }
 
 main .contents3 {
+  height: 150px;
+  width: 580px;
   background-color: yellowgreen;
-  margin: 80px 470px;
+  margin: auto;
+  text-align: center;
 }
 
 main .contents3 .text {
