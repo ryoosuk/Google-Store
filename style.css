@@ -6,51 +6,12 @@
   box-sizing: border-box;
 }
 
-/*スマホ*/
-@media (max-width: 767px) {
-  .sp {
-    display: block;
-  }
-  .pc {
-    display: none;
-  }
+.sp {
+  display: none;
 }
 
-/*タブレット*/
-@media (max-width: 1023px) {
-  main .char .text-wrap {
-    position: relative;
-  }
-  main .char .text-wrap .sp {
-    display: block;
-  }
-  main .char .text-wrap .tab {
-    display: none;
-  }
-  main .char .text-wrap .text-wrap2 {
-    position: absolute;
-    top: 0px;
-    width: 600px;
-  }
-  main .char .text-wrap .text-wrap2 h1 {
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: -1px;
-  }
-  main .contents .title p {
-    font-size: 22px;
-  }
-  main .contents .item-wrap .item {
-    width: 136px;
-    height: 307px;
-  }
-  main .contents .item-wrap .item img {
-    width: 100%;
-    height: 159px;
-  }
-  main .contents .item-wrap .item .char-wrap {
-    height: 148px;
-  }
+.pc {
+  display: block;
 }
 
 html,
@@ -201,7 +162,13 @@ main .char .text-wrap {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background-color: violet;
+  background-color: lightblue;
+}
+
+main .char .text-wrap .img {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 main .char .text-wrap video {
@@ -457,5 +424,57 @@ footer .right ul li a {
 
 footer .right ul li a:hover {
   color: blue;
+}
+
+/*スマホ*/
+@media (max-width: 767px) {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
+
+/*タブレット*/
+@media screen and (max-width: 1023px) {
+  main .char .text-wrap {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 80px;
+  }
+  main .char .text-wrap .sp {
+    display: block;
+  }
+  main .char .text-wrap .pc {
+    display: none;
+  }
+  main .char .text-wrap .text-wrap2 {
+    position: relative;
+    inset: 0px;
+    width: 100%;
+  }
+  main .char .text-wrap .text-wrap2 h1 {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -1px;
+  }
+  main .contents .title p {
+    font-size: 22px;
+  }
+  main .contents .item-wrap .item {
+    width: 136px;
+    height: 307px;
+  }
+  main .contents .item-wrap .item img {
+    width: 100%;
+    height: 159px;
+  }
+  main .contents .item-wrap .item .char-wrap {
+    height: 148px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

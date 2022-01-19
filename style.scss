@@ -5,69 +5,17 @@
     box-sizing: border-box;
 }
 
-/*スマホ*/
-@media(max-width: 767px){
-    .sp{
-        display: block;
-    }
-    .pc{
-        display: none;
-    }
+
+
+
+
+.sp{
+    display: none;
+}
+.pc{
+    display: block;
 }
 
-/*タブレット*/
-@media(max-width: 1023px){
-    main{
-        .char{
-            .text-wrap{
-                position: relative;
-                .sp{
-                    display: block;
-                }
-                .tab{
-                    display: none;
-                }
-                .text-wrap2{
-                    position: absolute;
-                    top: 0px;
-                    width: 600px;
-                    
-
-                    h1{
-                        font-size:  32px;
-                        line-height: 36px;
-                        letter-spacing: -1px;
-                    }
-                }
-            }
-        }
-
-        .contents{
-            .title{
-                p{
-                    font-size: 22px;
-                }
-
-            }
-            .item-wrap{
-                .item{
-                    width: 136px;
-                    height: 307px;
-                    img{
-                        width: 100%;
-                        height: 159px;
-                    }
-                    .char-wrap{
-                        height: 148px;
-                        p{
-
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 html,
 body,
 ul,
@@ -202,7 +150,14 @@ main{
             position: relative;
             display: flex;
             text-align: center;
-            background-color: violet;
+            background-color: lightblue;
+
+            .img{
+                height: 100%;
+                width: 100%;
+                position: relative;
+                
+            }
             video{
                 height: 100%;
                 width: 100%;
@@ -423,6 +378,73 @@ footer{
                 }
             }
 
+        }
+    }
+}
+
+/*スマホ*/
+@media(max-width: 767px){
+    .sp{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+}
+
+/*タブレット*/
+@media screen and (max-width: 1023px){
+    main{
+        .char{
+            .text-wrap{
+                position: relative;
+                flex-direction: column-reverse;
+                padding: 0 80px;
+                .sp{
+                    display: block;
+                }
+                .pc{
+                    display: none;
+                }
+
+                .text-wrap2{
+                    position: relative;
+                    inset: 0px;
+                    width: 100%;
+                    
+
+                    h1{
+                        font-size:  32px;
+                        line-height: 36px;
+                        letter-spacing: -1px;
+                    }
+                }
+            }
+        }
+
+        .contents{
+            .title{
+                p{
+                    font-size: 22px;
+                }
+
+            }
+            .item-wrap{
+                .item{
+                    width: 136px;
+                    height: 307px;
+                    img{
+                        width: 100%;
+                        height: 159px;
+                    }
+                    .char-wrap{
+                        height: 148px;
+                        p{
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
