@@ -86,6 +86,9 @@ header{
     background-color: #ffffff;
     padding:0px 20px;
     height: 56px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 
     .left{
         display:flex;
@@ -150,7 +153,7 @@ main{
             position: relative;
             display: flex;
             text-align: center;
-            background-color: lightblue;
+            background-color: rgb(200, 219, 231);
 
             .img{
                 height: 100%;
@@ -176,7 +179,8 @@ main{
                 font-size: 56px;
                 display: flex;
                 flex-direction: column;
-                
+                margin: auto;
+                width: 456px;
                 min-width: 270px;
                 max-height: 333px;
                 h1{
@@ -221,11 +225,11 @@ main{
             text-align: center;
             font-size: 32px;
             margin-bottom: 60px;
+            margin-top: 80px;
             
             p{
                 font-size: 32px;
                 font-weight: 600;
-                padding-top: 80px;
             }
         }
         .item-wrap{
@@ -390,6 +394,18 @@ footer{
     .pc{
         display: none;
     }
+
+    main{
+        .char{
+            .text-wrap{
+                position: relative;
+                inset: 0px;
+                .text-wrap2{
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
 
 /*タブレット*/
@@ -410,8 +426,8 @@ footer{
                 .text-wrap2{
                     position: relative;
                     inset: 0px;
-                    width: 100%;
                     
+                    padding: 40px 0;
 
                     h1{
                         font-size:  32px;
@@ -424,6 +440,7 @@ footer{
 
         .contents{
             .title{
+                margin-top: 40px;
                 p{
                     font-size: 22px;
                 }

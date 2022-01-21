@@ -84,6 +84,9 @@ header {
   background-color: #ffffff;
   padding: 0px 20px;
   height: 56px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
 
 header .left {
@@ -162,7 +165,7 @@ main .char .text-wrap {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background-color: lightblue;
+  background-color: #c8dbe7;
 }
 
 main .char .text-wrap .img {
@@ -195,6 +198,8 @@ main .char .text-wrap .text-wrap2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: auto;
+  width: 456px;
   min-width: 270px;
   max-height: 333px;
 }
@@ -235,12 +240,12 @@ main .contents .title {
   text-align: center;
   font-size: 32px;
   margin-bottom: 60px;
+  margin-top: 80px;
 }
 
 main .contents .title p {
   font-size: 32px;
   font-weight: 600;
-  padding-top: 80px;
 }
 
 main .contents .item-wrap {
@@ -434,6 +439,13 @@ footer .right ul li a:hover {
   .pc {
     display: none;
   }
+  main .char .text-wrap {
+    position: relative;
+    inset: 0px;
+  }
+  main .char .text-wrap .text-wrap2 {
+    width: 80%;
+  }
 }
 
 /*タブレット*/
@@ -455,12 +467,15 @@ footer .right ul li a:hover {
   main .char .text-wrap .text-wrap2 {
     position: relative;
     inset: 0px;
-    width: 100%;
+    padding: 40px 0;
   }
   main .char .text-wrap .text-wrap2 h1 {
     font-size: 32px;
     line-height: 36px;
     letter-spacing: -1px;
+  }
+  main .contents .title {
+    margin-top: 40px;
   }
   main .contents .title p {
     font-size: 22px;
