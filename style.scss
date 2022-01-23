@@ -93,6 +93,11 @@ header{
     .left{
         display:flex;
         align-items: center;
+        .menu-icon{
+            width: 30px;
+            height: 25px;
+            margin-right: 25px;
+        }
         svg{
             width:134px;
             height:48px;
@@ -395,6 +400,14 @@ footer{
         display: none;
     }
 
+    header{
+        .left{
+            .GOOGLESTORE{
+                display: none;
+            }
+        }
+    }
+
     main{
         .char{
             .text-wrap{
@@ -410,6 +423,19 @@ footer{
 
 /*タブレット*/
 @media screen and (max-width: 1023px){
+    header {
+        .left{
+            .item-wrap{
+                display: none;
+            }
+
+        }
+        .right{
+            .question{
+                display: none;
+            }
+        }
+    }
     main{
         .char{
             .text-wrap{

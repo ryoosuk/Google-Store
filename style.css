@@ -98,6 +98,12 @@ header .left {
           align-items: center;
 }
 
+header .left .menu-icon {
+  width: 30px;
+  height: 25px;
+  margin-right: 25px;
+}
+
 header .left svg {
   width: 134px;
   height: 48px;
@@ -439,6 +445,9 @@ footer .right ul li a:hover {
   .pc {
     display: none;
   }
+  header .left .GOOGLESTORE {
+    display: none;
+  }
   main .char .text-wrap {
     position: relative;
     inset: 0px;
@@ -450,6 +459,12 @@ footer .right ul li a:hover {
 
 /*タブレット*/
 @media screen and (max-width: 1023px) {
+  header .left .item-wrap {
+    display: none;
+  }
+  header .right .question {
+    display: none;
+  }
   main .char .text-wrap {
     position: relative;
     -webkit-box-orient: vertical;
