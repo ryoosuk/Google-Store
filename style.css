@@ -723,8 +723,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 52px;
-  padding: 0 30px;
+  padding: 0 72px;
 }
 
 footer .left {
@@ -903,6 +902,15 @@ footer .right ul li a:hover {
   main .contents3 .item-body1 .item-wrap {
     width: 50%;
   }
+  main .contents4 .container {
+    padding: unset;
+    margin: unset;
+    padding: 0 24px;
+    margin: 0 155.50px;
+  }
+  main .contents5 {
+    padding: unset;
+  }
   main .contents6 ul {
     color: #423f3f;
     font-size: 14px;
@@ -924,6 +932,11 @@ footer .right ul li a:hover {
   }
   main .contents6 .container .sp {
     display: none;
+  }
+  footer {
+    display: unset;
+    padding: unset;
+    padding: 16px 56px 24px;
   }
 }
 

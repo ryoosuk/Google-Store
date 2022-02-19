@@ -671,8 +671,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 52px;
-    padding: 0 30px;
+    
+    padding: 0 72px;
     .left{
         display: flex;
         .img-wrap{
@@ -865,6 +865,20 @@ footer{
             }
         }
 
+        .contents4{
+            .container{
+                padding: unset;
+                margin: unset;
+                padding: 0 24px;
+                margin: 0 155.50px;
+            }
+        }
+        
+        .contents5{
+            padding: unset;
+           
+        }
+
         .contents6{
             ul{
                 color: #423f3f;
@@ -892,6 +906,12 @@ footer{
                 }
             }
         }
+    }
+
+    footer{
+        display: unset;
+        padding: unset;
+        padding: 16px 56px 24px;
     }
 }
 
