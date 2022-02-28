@@ -578,7 +578,9 @@ main{
                     img{
                         width: 80%;
                         padding-top: 40px;
+                        margin: auto;
                     }
+                    
                 }
             }
         }
@@ -695,6 +697,7 @@ footer{
         .right{
             ul{
                 display: flex;
+                flex-wrap: wrap;
                 li{
                     font-size: 11px;
                     list-style: none;
@@ -890,9 +893,22 @@ footer{
                             margin: unset;
                             margin: auto;
                             width: 100%;
+                            h1{
+
+                            }
+                            h2{
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
                         }
                         img{
-                            width: unset;
+                            width: 100%;
+                        }
+                        .sp{
+                            display: none;
+                        }
+                        .pc{
+                            display: block;
                         }
                     }
                 }
@@ -992,6 +1008,14 @@ footer{
             }
         }
 
+        .contents{
+            .product__item__wrap{
+                .item-wrap{
+                    width: 100%;
+                }
+            }
+        }
+
         .contents2{
             .title{
 
@@ -1013,6 +1037,52 @@ footer{
                 .item-wrap{
                     width: unset;
                     width: 100%;
+                    .item{
+                        .char-wrap{
+                            h1{
+
+                            }
+                            h2{
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contents3{
+            .item-body1{
+                .item-wrap{
+                    .item{
+                        width: unset;
+                        .char-wrap{
+                            width: unset;
+                        }
+                        .sp{
+                            display: block;
+                        }
+                        .pc{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contents4{
+            .container{
+                width: 100%;
+                margin: unset;
+                .text{
+                    p{
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
             }
         }
@@ -1050,6 +1120,23 @@ footer{
                 }
                 .list2{
     
+                }
+            }
+        }
+    }
+    footer{
+        .container{
+            .left{
+
+            }
+            .right{
+                flex-wrap: wrap;
+                width: 100%;
+                ul{
+                    li{
+                        margin: unset;
+                        margin: 8px 16px 0 0;
+                    }
                 }
             }
         }

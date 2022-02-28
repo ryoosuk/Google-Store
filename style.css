@@ -624,6 +624,7 @@ main .contents3 .item-body1 .item-wrap .item .char-wrap .button a {
 main .contents3 .item-body1 .item-wrap .item img {
   width: 80%;
   padding-top: 40px;
+  margin: auto;
 }
 
 main .contents4 {
@@ -749,6 +750,8 @@ footer .container .right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .container .right ul li {
@@ -924,8 +927,18 @@ footer .container .right ul li.japan .img {
     margin: auto;
     width: 100%;
   }
+  main .contents3 .item-body1 .item-wrap .item .char-wrap h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
   main .contents3 .item-body1 .item-wrap .item img {
-    width: unset;
+    width: 100%;
+  }
+  main .contents3 .item-body1 .item-wrap .item .sp {
+    display: none;
+  }
+  main .contents3 .item-body1 .item-wrap .item .pc {
+    display: block;
   }
   main .contents4 .container {
     padding: unset;
@@ -990,6 +1003,9 @@ footer .container .right ul li.japan .img {
   main .char .text-wrap .text-wrap2 {
     width: 80%;
   }
+  main .contents .product__item__wrap .item-wrap {
+    width: 100%;
+  }
   main .contents2 .item-body1 .item-wrap {
     width: 100%;
   }
@@ -1002,6 +1018,33 @@ footer .container .right ul li.japan .img {
   main .contents2 .item-body3 .item-wrap {
     width: unset;
     width: 100%;
+  }
+  main .contents2 .item-body3 .item-wrap .item .char-wrap h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  main .contents2 .item-body3 .item-wrap .item img {
+    width: 100%;
+  }
+  main .contents3 .item-body1 .item-wrap .item {
+    width: unset;
+  }
+  main .contents3 .item-body1 .item-wrap .item .char-wrap {
+    width: unset;
+  }
+  main .contents3 .item-body1 .item-wrap .item .sp {
+    display: block;
+  }
+  main .contents3 .item-body1 .item-wrap .item .pc {
+    display: none;
+  }
+  main .contents4 .container {
+    width: 100%;
+    margin: unset;
+  }
+  main .contents4 .container .text p {
+    font-size: 24px;
+    line-height: 32px;
   }
   main .contents5 {
     padding: unset;
@@ -1028,6 +1071,15 @@ footer .container .right ul li.japan .img {
   main .contents6 .container .sp {
     display: block;
     padding-bottom: 16px;
+  }
+  footer .container .right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  footer .container .right ul li {
+    margin: unset;
+    margin: 8px 16px 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
