@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Google Store For Google Made Devices & Accessories</title>
 </head>
@@ -11,14 +12,63 @@
     <header>
 
         <div class="left">
-            <a href="">
-                <svg viewBox="0 0 24 24" class="menu-icon">
-                    <g class="">
-                        <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z" fill="#5F6368">
-                        </path>
-                    </g>
-                </svg>
-            </a>
+            <div class="hum-menu" data-state="inactive">
+                <button>
+                    <svg viewBox="0 0 24 24" class="menu-icon inactive">
+                        <g class="">
+                            <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z" fill="#5F6368">
+                            </path>
+                        </g>
+                    </svg>
+                    <svg class="menu-icon active" viewBox="0 0 24 24" >
+                        <g class="">
+                            <path d="M19 6.4l-1.4-1.4-5.6 5.6-5.6-5.6-1.4 1.4 5.6 5.6-5.6 5.6 1.4 1.4 5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6z" fill="#5F6368">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+                <div class="open-menu">
+                    <div class="container1">
+                        <div class="item-container">
+                            <div class="open-wrap">
+                                <div class="item">
+                                    <div class="img image1" ></div>
+                                    <p>Pixel</p> 
+                                </div>
+                            </div>
+                            <div class="open-wrap">
+                                <div class="item">
+                                    <div class="img image2"></div>
+                                    <p>Nest</p>
+                                </div>
+                            </div>
+                            <div class="open-wrap">
+                                <div class="item">
+                                    <div class="img image3"></div>
+                                    <p>Fitbit</p>
+                                </div>
+                            </div>
+                            <div class="open-wrap">
+                                <div class="item">
+                                    <div class="img image4">
+
+                                    </div>
+                                    <p>セール</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="text-wrap">
+                            <div class="image5"></div>
+                            <p>ヘルプ</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
             <svg class="icon" viewBox="0 0 867 155" class="">
                 <g class="">
                     <g fill="#5F6368" class="GOOGLESTORE">
@@ -453,4 +503,5 @@
     
     </footer>
 </body>
+<script type="text/javascript" src="main.js"></script>
 </html>

@@ -4,7 +4,32 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-family: 'Google Sans',Arial,sans-serif;
+}
+
+button {
+  color: #423f3f;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color 350ms ease;
+  transition: color 350ms ease;
 }
 
 .sp {
@@ -35,6 +60,7 @@ body {
   text-rendering: auto;
   position: relative;
   background-color: white;
+  overflow-y: auto;
 }
 
 li {
@@ -82,7 +108,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
+  background-color: white;
   padding: 0px 20px;
   height: 56px;
   position: fixed;
@@ -101,10 +127,12 @@ header .left {
           align-items: center;
 }
 
-header .left a .menu-icon {
-  width: 30px;
-  height: 25px;
-  margin-right: 25px;
+header .left .hum-menu button svg {
+  display: none;
+}
+
+header .left .hum-menu .open-menu {
+  display: none;
 }
 
 header .left svg {
@@ -791,6 +819,129 @@ footer .container .right ul li.japan .img {
   .pc {
     display: none;
   }
+  header .left .hum-menu {
+    position: relative;
+  }
+  header .left .hum-menu button .menu-icon {
+    width: 30px;
+    height: 25px;
+    margin-right: 25px;
+  }
+  header .left .hum-menu button .inactive {
+    display: block;
+  }
+  header .left .hum-menu button .active {
+    display: none;
+  }
+  header .left .hum-menu .open-menu {
+    position: fixed;
+    top: 56px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    height: 520.25px;
+  }
+  header .left .hum-menu .open-menu .container1 {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 64px 16px 19px;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item p {
+    font-size: 22px;
+    line-height: 24px;
+    color: #3C4043;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item .img {
+    width: 100%;
+    height: 123px;
+    margin-bottom: 17px;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item .image1 {
+    background-image: url(https://lh3.googleusercontent.com/N5etsx8XkAtfCUISaqleki2gPWKLTaDWrIKz95Sc3O5pz4omKix2Zj7xSlNnbeu05IGrRIMVhtG6sb0-ZdY1ZdNDB3P5Vn0922I);
+    background-size: 100% 100%;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item .image2 {
+    background-image: url(https://lh3.googleusercontent.com/BcDTQHthdK8HwHOnupekcFmi3HGBAaUVtDk9w11Kk-ZIMjTH29YI6moioQWA5AgSXir7sJUdlNZxjepwzobLFvrgJgDUWsJfmAY);
+    background-size: 100% 100%;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item .image3 {
+    background-image: url(https://lh3.googleusercontent.com/6amtEdVwNKZf5a0KNBK8OD3gniotW7Y-BElba9-AZrAwoCqbmPmnjXMwrBWk_dW_QmhtSCLiI1Q0w8AB1vHwXB36WOLv8q2eAiFs);
+    background-size: 100% 100%;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item .image4 {
+    background-image: url(https://lh3.googleusercontent.com/G2zsxf4n8mkzpn7wL1wqZYXzNnCNuoPrAoY6VB5NNMnQyl-N4WXUu74b-JU1bDQRaAI2D_-QwIBuZMjk5IML_g);
+    background-size: 100% 100%;
+  }
+  header .left .hum-menu .open-menu .container2 {
+    height: 248px;
+  }
+  header .left .hum-menu .open-menu .container2 .text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 100px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .left .hum-menu .open-menu .container2 .text-wrap .image5 {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%235f6368' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z'%3E%3C/path%3E%3C/svg%3E");
+    margin-right: 5px;
+  }
+  header .left .hum-menu .open-menu .container2 .text-wrap p {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  header .left .hum-menu[data-state="inactive"] .open-menu {
+    display: none;
+  }
+  header .left .hum-menu[data-state="active"] .inactive {
+    display: none;
+  }
+  header .left .hum-menu[data-state="active"] .active {
+    display: block;
+  }
+  header .left .hum-menu[data-state="active"] .open-menu {
+    display: block;
+  }
+  header .left .hum-menu[data-state="active"] .open-menu .container1 {
+    background-color: white;
+  }
+  header .left .hum-menu[data-state="active"] .open-menu .container2 {
+    background-color: #f8f9fa;
+  }
   header .left .item-wrap {
     display: none;
   }
@@ -890,6 +1041,9 @@ footer .container .right ul li.japan .img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  main .contents2 .item-body2 .item-wrap {
+    margin: unset;
   }
   main .contents2 .item-body2 .item-wrap .item .char-wrap {
     padding: 32px 48px;
@@ -995,6 +1149,64 @@ footer .container .right ul li.japan .img {
   }
   header .left .GOOGLESTORE {
     display: none;
+  }
+  header .left .hum-menu .open-menu .container1 {
+    padding: 16px 16px 0 16px;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item p {
+    font-size: 25px;
+    line-height: 41px;
+    color: #3C4043;
+    font-weight: 400;
+  }
+  header .left .hum-menu .open-menu .container1 .item-container .open-wrap .item .img {
+    margin: unset;
+  }
+  header .left .hum-menu .open-menu .container2 .text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 100px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 46px 16px;
+  }
+  header .left .hum-menu .open-menu .container2 .text-wrap .image5 {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  header .left .hum-menu .open-menu .container2 .text-wrap p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--color-type-grey-800);
   }
   main .char .text-wrap {
     position: relative;
