@@ -32,6 +32,33 @@ button {
   transition: color 350ms ease;
 }
 
+.button {
+  width: 124px;
+  height: 44px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.button a {
+  border: 2px solid;
+  border-radius: 4px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+}
+
+.button a:hover {
+  -webkit-transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+}
+
 .sp {
   display: none;
 }
@@ -257,13 +284,14 @@ main .char .text-wrap .text-wrap2 h2 {
 }
 
 main .char .text-wrap .text-wrap2 .button {
-  width: 183px;
-  height: 40px;
+  width: 124px;
+  height: 44px;
   margin: auto;
 }
 
 main .char .text-wrap .text-wrap2 .button a {
-  border-radius: 20px;
+  border: 2px solid;
+  border-radius: 4px;
   display: block;
   height: 100%;
   width: 100%;
@@ -274,6 +302,11 @@ main .char .text-wrap .text-wrap2 .button a {
       -ms-flex-align: center;
           align-items: center;
   line-height: 40px;
+}
+
+main .char .text-wrap .text-wrap2 .button a:hover {
+  -webkit-transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+  transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
 }
 
 main .contents .title {
@@ -288,16 +321,23 @@ main .contents .title p {
   font-weight: 600;
 }
 
-main .contents .item-wrap {
+main .contents .product__item__wrap {
+  width: 100%;
+}
+
+main .contents .product__item__wrap .scroll-wrap {
+  overflow-x: scroll;
+}
+
+main .contents .product__item__wrap .scroll-wrap .item-wrap {
   padding: 0px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll;
   margin: auto;
 }
 
-main .contents .item-wrap .product__item {
+main .contents .product__item__wrap .scroll-wrap .item-wrap .product__item {
   margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,12 +352,12 @@ main .contents .item-wrap .product__item {
   height: 429px;
 }
 
-main .contents .item-wrap .product__item img {
+main .contents .product__item__wrap .scroll-wrap .item-wrap .product__item img {
   width: 238px;
   height: 279px;
 }
 
-main .contents .item-wrap .product__item .char-wrap {
+main .contents .product__item__wrap .scroll-wrap .item-wrap .product__item .char-wrap {
   padding: 32px 20px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,13 +371,13 @@ main .contents .item-wrap .product__item .char-wrap {
           flex-direction: column;
 }
 
-main .contents .item-wrap .product__item .char-wrap .name {
+main .contents .product__item__wrap .scroll-wrap .item-wrap .product__item .char-wrap .name {
   font-size: 17px;
   font-weight: 600;
   line-height: 22px;
 }
 
-main .contents .item-wrap .product__item .char-wrap .price {
+main .contents .product__item__wrap .scroll-wrap .item-wrap .product__item .char-wrap .price {
   font-size: 12px;
 }
 
@@ -399,26 +439,6 @@ main .contents2 .item-body1 .item-wrap .item h2 {
   line-height: 56px;
 }
 
-main .contents2 .item-body1 .item-wrap .item .button {
-  width: 183px;
-  height: 40px;
-  margin: auto;
-}
-
-main .contents2 .item-body1 .item-wrap .item .button a {
-  border-radius: 20px;
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 40px;
-}
-
 main .contents2 .item-body2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,23 +478,6 @@ main .contents2 .item-body2 .item-wrap .item .char-wrap h2 {
 main .contents2 .item-body2 .item-wrap .item .char-wrap .link {
   width: 316.33px;
   height: 755.63px;
-}
-
-main .contents2 .item-body2 .item-wrap .item .char-wrap .button {
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 24px;
-}
-
-main .contents2 .item-body2 .item-wrap .item .char-wrap .button a {
-  border-radius: 20px;
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  line-height: 50px;
 }
 
 main .contents2 .item-body2 .item-wrap .item img {
@@ -560,23 +563,6 @@ main .contents2 .item-body3 .item-wrap .item .char-wrap .link {
   height: 755.63px;
 }
 
-main .contents2 .item-body3 .item-wrap .item .char-wrap .button {
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 24px;
-}
-
-main .contents2 .item-body3 .item-wrap .item .char-wrap .button a {
-  border-radius: 20px;
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  line-height: 50px;
-}
-
 main .contents2 .item-body3 .item-wrap .item .img img {
   width: 100%;
 }
@@ -631,23 +617,6 @@ main .contents3 .item-body1 .item-wrap .item .char-wrap h2 {
 main .contents3 .item-body1 .item-wrap .item .char-wrap .link {
   width: 316.33px;
   height: 755.63px;
-}
-
-main .contents3 .item-body1 .item-wrap .item .char-wrap .button {
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 24px;
-}
-
-main .contents3 .item-body1 .item-wrap .item .char-wrap .button a {
-  border-radius: 20px;
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  line-height: 50px;
 }
 
 main .contents3 .item-body1 .item-wrap .item img {
@@ -710,8 +679,11 @@ main .contents5 {
   width: 100%;
   font-size: 12px;
   line-height: 20px;
-  margin: 24px 32px;
   padding: 32px 72px;
+}
+
+main .contents5 p {
+  width: 100%;
 }
 
 main .contents6 {
