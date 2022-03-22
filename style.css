@@ -382,7 +382,6 @@ main .contents2 .item-body1 .item-wrap .item {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  min-width: 400px;
   max-height: 333px;
   text-align: center;
   padding: 32px 48px;
@@ -390,6 +389,9 @@ main .contents2 .item-body1 .item-wrap .item {
 
 main .contents2 .item-body1 .item-wrap .item h1 {
   font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 main .contents2 .item-body1 .item-wrap .item h2 {
@@ -492,7 +494,6 @@ main .contents2 .item-body3 {
 
 main .contents2 .item-body3 .item-wrap {
   width: 30%;
-  margin-left: 24px;
   margin-bottom: 24px;
   background-color: #F8F9FA;
 }
@@ -583,6 +584,7 @@ main .contents2 .item-body3 .item-wrap .item .img img {
 main .contents3 {
   margin-top: 80px;
   margin-bottom: 80px;
+  padding: 0 24px;
 }
 
 main .contents3 .item-body1 {
@@ -598,7 +600,6 @@ main .contents3 .item-body1 {
 
 main .contents3 .item-body1 .item-wrap {
   width: 100%;
-  margin-left: 24px;
   margin-bottom: 24px;
 }
 
@@ -1011,17 +1012,22 @@ footer .container .right ul li.japan .img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    width: 50%;
+    width: 55%;
     margin: auto;
   }
   main .contents2 .item-body1 .item-wrap .item {
     position: absolute;
     inset: 0;
     margin: 0;
+    width: 100%;
+  }
+  main .contents2 .item-body1 .item-wrap .item h1 {
+    font-size: 16px;
+    line-height: 24px;
   }
   main .contents2 .item-body1 .item-wrap .item h2 {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 28px;
+    line-height: 34px;
     letter-spacing: -0.5px;
   }
   main .contents2 .title p {
